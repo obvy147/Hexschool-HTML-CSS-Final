@@ -66,6 +66,8 @@ a{
 }
 .header-ul li{
 	margin-right: 12px;
+	display: flex;
+	align-items: center;
 }
 .header-a1{
 	color: #4267B2;
@@ -133,11 +135,11 @@ a{
 	padding-left: 498px;
 	padding-top: 24px;
 }
-.content ul{
+.content .outer-ul{
 	display: flex;
 	justify-content: center;
 }
-.content ul li{
+.content .outer-li{
 	width: 350px;
 	border-radius: 5px;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
@@ -151,32 +153,25 @@ a{
 	margin-top: 42px;
 	margin-bottom: 42px;
 }
-.content ul li h4{
+.content .outer-li h4{
 	margin-top: 10px;
 	font-size: 20px;
 	font-weight: 700;
 }
-.content ul li p{
+.content .outer-li p{
 	margin-top: 10px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	width: 305px;
 }
-.content .no-flex{
-	display: block;
-	list-style: disc;
-}
-.content .no-flex li{
-	display: block;
+
+.content li{
 	width: 300px;
-	border: 0px;
-	box-shadow: 0px 0px 0px;
-	margin-right: 0px;
-	padding: 0px;
 	margin-top: 5px;
 	line-height: 18px;
 }
+
 .content h3{
 	font-size: 24px;
 	font-weight: 700;
@@ -218,6 +213,7 @@ form{
 	display: flex;
 }
 .form-contact input{
+	display: block;
 	margin-top: 8px;
 	margin-bottom: 8px;
 	width: 351px;
